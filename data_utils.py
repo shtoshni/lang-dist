@@ -1,21 +1,6 @@
 from os import path
 import glob
 
-# lang_codes = [
-#     # Romance
-#     'fr', 'it', 'pt', 'es', 'ca', 'ro',
-#     # Germanic
-#     'en', 'da', 'nl', 'de', 'no', 'sv',
-#     # Finno-Ugric
-#     'et', 'fi', 'hu',
-#     # Slavic
-#     'hr', 'sl', 'cs', 'sk', 'mk', 'bg', 'pl', 'ru', 'uk',
-#     # Hellenic
-#     'el',
-#     # Random
-#     'ar', 'iw', 'id', 'tr'
-# ]
-
 lang_codes = [
     # Romance
     'fr', 'it', 'pt', 'es', 'ca', 'ro',
@@ -29,6 +14,21 @@ lang_codes = [
     'el',
     # Random
     'ar', 'iw', 'id', 'tr'
+]
+
+lang_codes_3 = [
+    # Romance
+    'fra', 'ita', 'por', 'spa', 'cat', 'ron',
+    # Germanic
+    'eng', 'deu', 'nld', 'dan', 'nor', 'swe',
+    # Finno-Ugric
+    'est', 'fin', 'hun',
+    # Slavic
+    'hrv', 'slv', 'ces', 'slk', 'mkd', 'bul', 'pol', 'rus', 'ukr',
+    # Hellenic
+    'ell',
+    # Random
+    'arb', 'heb', 'ind', 'tur'
 ]
 
 # Just Indo-European langs

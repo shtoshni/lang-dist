@@ -119,3 +119,13 @@ def get_non_diagonal_entries(data_mat):
 
     entries = list(data_mat[lower_tri_indices]) + list(data_mat[upper_tri_indices])
     return entries
+
+def create_symm_dist_mat(sim_mat):
+    # Make sure the matrix is symmetric
+    sim_mat = (sim_mat + sim_mat.T)/2
+    # Create the distance matrix
+    dist_mat = 1.0 - sim_mat
+    # Zero out diagonals
+    np.fill_diagonal(dist_mat, 0)
+
+    return dist_mat
